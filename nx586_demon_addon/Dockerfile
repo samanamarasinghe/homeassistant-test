@@ -15,5 +15,8 @@ RUN pip install pynx584
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
+# Copy the config
+COPY default_nx584_config.ini /app/default_nx584_config.ini
+
 # Run the script when the container starts
 CMD [ "/run.sh" ]

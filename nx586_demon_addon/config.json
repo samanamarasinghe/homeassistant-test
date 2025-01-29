@@ -8,7 +8,10 @@
     "boot": "auto",
     "hassio_api": true,
     "hassio_role": "default",
-    "options": {    },
+    "options": {
+	"config_path": "/data/nx584_config.ini"
+    },
     "schema": {    },
-    "devices": ["/dev/ttyUSB0"]
+    "devices": ["/dev/ttyUSB0"],
+    "privileged": ["SYS_RAWIO"]
 }
