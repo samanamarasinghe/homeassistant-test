@@ -8,9 +8,7 @@
     "boot": "auto",
     "hassio_api": true,
     "hassio_role": "default",
-    "options": {
-    },
-    "schema": {
-    }
+    "options": {    },
+    "schema": {    },
     "devices": ["/dev/ttyUSB0"]
 }
