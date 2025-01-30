@@ -6,7 +6,6 @@ echo "Starting my custom add-on..."
 CONFIG_FILE="/data/nx584_config.ini"
 DEFAULT_CONFIG_FILE="/app/default_nx584_config.ini"
 
-cp "$DEFAULT_CONFIG_FILE" "$CONFIG_FILE"
 
 # Check if the config file exists
 if [ -f "$CONFIG_FILE" ]; then
@@ -20,7 +19,7 @@ fi
 
 # Example: Start a Python script or service
 ##python3 -m http.server 8080 &
-nx584_server --serial /dev/ttyUSB0 --baud 9600 --config "$CONFIG_FILE" --debug
+nx584_server --serial /dev/ttyUSB0 --baud 9600 --config "$CONFIG_FILE" 
 
 # Keep the process running
 while true; do
