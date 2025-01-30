@@ -2,7 +2,8 @@
 
 echo "Starting my custom add-on..."
 
-CONFIG_FILE=$(jq --raw-output '.config_path' /data/options.json)
+#CONFIG_FILE=$(jq --raw-output '.config_path' /data/options.json)
+CONFIG_FILE="/data/nx584_config.ini"
 DEFAULT_CONFIG_FILE="/app/default_nx584_config.ini"
 
 # Check if the config file exists
@@ -17,7 +18,7 @@ fi
 
 # Example: Start a Python script or service
 ##python3 -m http.server 8080 &
-nx584_server --serial /dev/ttyUSB0 --baud 9600 
+nx584_server --serial /dev/ttyUSB0 --baud 9600 --config "$CONFIG_FILE" --debug
 
 # Keep the process running
 while true; do
