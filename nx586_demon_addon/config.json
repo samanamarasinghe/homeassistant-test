@@ -11,9 +11,6 @@
     "options": {
 	"config_path": "/data/nx584_config.ini"
     },
-    "ports": {
-        "5007/tcp": 5007
-    },
     "schema": {    },
     "devices": ["/dev/ttyUSB0"],
     "privileged": ["SYS_RAWIO"]
