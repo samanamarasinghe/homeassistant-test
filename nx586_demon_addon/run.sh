@@ -6,6 +6,8 @@ echo "Starting my custom add-on..."
 CONFIG_FILE="/data/nx584_config.ini"
 DEFAULT_CONFIG_FILE="/app/default_nx584_config.ini"
 
+cp "$DEFAULT_CONFIG_FILE" "$CONFIG_FILE"
+
 # Check if the config file exists
 if [ -f "$CONFIG_FILE" ]; then
     echo "Using config file: $CONFIG_FILE"
