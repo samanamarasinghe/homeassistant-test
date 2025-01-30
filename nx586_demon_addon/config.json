@@ -1,10 +1,10 @@
 {
     "name": "Custom NX584 demon",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "slug": "nx586_demon_addon",
     "description": "The demon for NX584 for Home Assistant.",
     "arch": ["amd64", "armv7", "aarch64"],
-    "startup": "services",
+    "startup": "application",
     "boot": "auto",
     "hassio_api": true,
     "hassio_role": "default",
