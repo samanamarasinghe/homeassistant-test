@@ -4,7 +4,7 @@
     "slug": "nx586_demon_addon",
     "description": "The demon for NX584 for Home Assistant.",
     "arch": ["amd64", "armv7", "aarch64"],
-    "startup": "application",
+    "startup": "service",
     "boot": "auto",
     "hassio_api": true,
     "hassio_role": "default",
