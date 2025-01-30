@@ -20,7 +20,7 @@ fi
 
 # Example: Start a Python script or service
 ##python3 -m http.server 8080 &
-nx584_server --serial /dev/ttyUSB0 --baud 9600 --config "$CONFIG_FILE"  --listen 127.0.0.1 --port 5007
+nx584_server --serial /dev/ttyUSB0 --baud 9600 --config "$CONFIG_FILE"  --listen 0.0.0.0 --port 5007
 
 # Keep the process running
 while true; do
